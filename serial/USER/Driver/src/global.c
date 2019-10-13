@@ -31,7 +31,7 @@ PUTCHAR_PROTOTYPE
   return ch;
 }
 
-u8 byte_crc( u8 * crcData,u8 len)
+u16 byte_crc( u8 * crcData,u8 len)
 {
 	u16 crc = 0xffff;
 	u8 i;
@@ -56,48 +56,8 @@ u8 byte_crc( u8 * crcData,u8 len)
 		}
 		ptr++;
 	}
-	
-	if( ((crc&0x00ff)== crcData[len-1]) && (  (crc&0xff00)>>8 == crcData[len-2] )  )
-	{
-		return 1;
-	}	
-	else
-	{
-		return 0;
-	}
-	
+	return crc;	
 }
-
-
-u16 crc16( u8 * crcData,u8 len)
-{
-	u16 crc = 0xffff;
-	u8 i;
-	u8 *ptr = crcData;
-	while( len-- )
-	{
-		for(i = 0x80; i != 0; i = i >> 1)
-		{
-			if((crc & 0x8000) != 0)	 // 1
-			{
-				crc = crc << 1;
-				crc = crc ^ 0x1021;
-			}
-			else	 // 0
-			{
-				crc = crc << 1;
-			}
-			if((*ptr & i) != 0)	// 1
-			{
-				crc = crc ^ 0x1021;
-			} 
-		}
-		ptr++;
-	}
-
-	return crc;
-}
-
 
 void SetTimeSlickTick(void)
 {

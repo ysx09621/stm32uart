@@ -12,9 +12,10 @@
 #include "manage_handle.h"
 #include "bsp.h"
 #include "nvic.h"
+#include "adc.h"
 
-u8 byte_crc( u8 * crcData,u8 len);
-u16 crc16( u8 * crcData,u8 len);
+u16 byte_crc( u8 * crcData,u8 len);
+//u16 crc16( u8 * crcData,u8 len);
 
 void SetTimeSlickTick(void) ;
 

@@ -39,13 +39,13 @@ int main(void)
 				
 	if(TICK_100MS_EVENT == 1)
 	{
-	
+	  
 		TICK_100MS_EVENT = 0;
 	}
 	
 	if(TICK_1S_EVENT == 1)
 	{
-
+      printf_adc_value();
 	    led_toggle();
 		TICK_1S_EVENT = 0;
 	}

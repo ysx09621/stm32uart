@@ -435,6 +435,16 @@
               <FileType>1</FileType>
               <FilePath>..\FWlib\src\misc.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWlib\src\stm32f10x_dma.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f10x_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\FWlib\src\stm32f10x_adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -499,6 +509,11 @@
               <FileName>gpio.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Driver\src\gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Driver\src\adc.c</FilePath>
             </File>
           </Files>
         </Group>

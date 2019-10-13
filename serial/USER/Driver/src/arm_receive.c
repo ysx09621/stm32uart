@@ -7,10 +7,6 @@ void PrintArmDirective(u8 vBuffer[], u8 vLength)
 {
 	//打印除心跳以外所接收到的信息.
 	u8 pos = 0;
-	
-  vLength = vLength + 2;
-	vBuffer[vLength -2 ] = (crc16(vBuffer, vBuffer[0])&0xff00)>>8;
-	vBuffer[vLength -1 ] = crc16(vBuffer, vBuffer[0])&0x00ff;
 	//if (!(((vBuffer[2] == 1) && (vBuffer[3] == 7)) || ((vBuffer[2] == 1) && (vBuffer[3] == 0))))
 	{
 		DebugPrintf("\r\n");
@@ -211,6 +207,10 @@ void HandleArmFrame(ArmFrameStructure *Frame)
  输出      : None
  返回      : None
  修改时间	：2012年07月06日 11:53:43
+
+length = 07~crc(end)
+AA 55 07(L) 03(G) [ bb(CMD) cc dd ]  aa e3
+AA 55 07 03 BB CC DD AA E3
  *******************************************************************************/
 void arm_receive(void)
 {

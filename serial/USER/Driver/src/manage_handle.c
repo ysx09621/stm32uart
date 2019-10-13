@@ -160,20 +160,17 @@ void Manage_Handle_perform(char const vCommand[], u8 vParameter[], u8 vValue[])
 	{
     u8 buf[24] = {0};
 		u8 i = 0;
-	//AA 55 0a aa bb cc dd ee ff 01 02 03 ff 63	
+		u16 crc = 0;
+	//55 AA 07 03 BB CC DD AA E3
 		Manage_Help();
-		buf[i++] = 0x0a;
-		buf[i++] = 0x01;
-		buf[i++] = 0xbb;
-		buf[i++] = 0xcc;
-		buf[i++] = 0xdd;
-		buf[i++] = 0xee;
-		buf[i++] = 0xff;
-		buf[i++] = 0x01;
-		buf[i++] = 0x02;
+		buf[i++] = 0x07;
 		buf[i++] = 0x03;
-		buf[i++] = (crc16( buf,buf[0]) & 0xFF00)>>8;
-		buf[i++] = (crc16( buf,buf[0]) & 0x00FF);
+		buf[i++] = 0xBB;
+		buf[i++] = 0xCC;
+		buf[i++] = 0xDD;
+		crc = byte_crc(buf,i) ;
+		buf[i++] = (crc & 0xFF00)>>8;
+		buf[i++] = (crc & 0x00FF);
 		uart4_send_byte(buf,i);
 		return;
 	}

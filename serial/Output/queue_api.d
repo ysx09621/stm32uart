@@ -6,8 +6,10 @@
 ..\output\queue_api.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\queue_api.o: ..\CMSIS\system_stm32f10x.h
 ..\output\queue_api.o: ..\USER\stm32f10x_conf.h
-..\output\queue_api.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\output\queue_api.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\output\queue_api.o: ..\CMSIS\stm32f10x.h
+..\output\queue_api.o: ..\FWlib\inc\stm32f10x_dma.h
+..\output\queue_api.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\output\queue_api.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\output\queue_api.o: ..\FWlib\inc\stm32f10x_tim.h
 ..\output\queue_api.o: ..\FWlib\inc\stm32f10x_usart.h
@@ -23,3 +25,4 @@
 ..\output\queue_api.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 ..\output\queue_api.o: .\Driver\inc\bsp.h
 ..\output\queue_api.o: .\Driver\inc\nvic.h
+..\output\queue_api.o: .\Driver\inc\adc.h

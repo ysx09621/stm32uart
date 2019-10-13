@@ -10,10 +10,11 @@ void module_init(void)
 
 void bsp_init(void)
 {
-    module_init();	
+  module_init();	
 	gpio_config();
 	usart1_config();
 	uart4_config();
 	nvic_config();
+	adc_init();
 	
 }

@@ -127,8 +127,8 @@ u8 uart4_send_byte(uint8_t *data, uint16_t len)
 	
 
 	
+	InsertQueueValue(&Uart4TransmitQueue,ARMHEAD2 );
 	InsertQueueValue(&Uart4TransmitQueue,ARMHEAD1);
-	InsertQueueValue(&Uart4TransmitQueue,ARMHEAD2);
   for(u8 i=0; i<len; i++)
 	{
 		InsertQueueValue(&Uart4TransmitQueue, *(data++));

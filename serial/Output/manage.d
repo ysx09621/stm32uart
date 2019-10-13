@@ -7,8 +7,10 @@
 ..\output\manage.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 ..\output\manage.o: ..\CMSIS\system_stm32f10x.h
 ..\output\manage.o: ..\USER\stm32f10x_conf.h
-..\output\manage.o: ..\FWlib\inc\stm32f10x_gpio.h
+..\output\manage.o: ..\FWlib\inc\stm32f10x_adc.h
 ..\output\manage.o: ..\CMSIS\stm32f10x.h
+..\output\manage.o: ..\FWlib\inc\stm32f10x_dma.h
+..\output\manage.o: ..\FWlib\inc\stm32f10x_gpio.h
 ..\output\manage.o: ..\FWlib\inc\stm32f10x_rcc.h
 ..\output\manage.o: ..\FWlib\inc\stm32f10x_tim.h
 ..\output\manage.o: ..\FWlib\inc\stm32f10x_usart.h
@@ -24,3 +26,4 @@
 ..\output\manage.o: .\Driver\inc\bsp.h
 ..\output\manage.o: .\Driver\inc\global.h
 ..\output\manage.o: .\Driver\inc\nvic.h
+..\output\manage.o: .\Driver\inc\adc.h
