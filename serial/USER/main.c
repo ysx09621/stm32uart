@@ -1,7 +1,8 @@
 #include "global.h"
-
+#define FLASH_BASE            ((uint32_t)0x08000000) 
 int main(void)
-{  
+{ 
+SCB->VTOR = FLASH_BASE | 0x7000; /* Vector Table Relocation in Internal FLASH. */	
    SystemInit();	//配置系统时钟为 72M  
 	bsp_init();
 

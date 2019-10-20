@@ -16,7 +16,7 @@ I (..\FWlib\inc\stm32f10x_usart.h)(0x5D5905F6)
 I (..\FWlib\inc\misc.h)(0x5D5905F3)
 I (.\Driver\inc\queue_api.h)(0x5D6A5DEB)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
-F (.\main.c)(0x5DA2EDBF)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CMSIS -I ..\FWlib\inc -I ..\USER -I .\Driver\inc-I.\RTE\_USART1-DEMO-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
+F (.\main.c)(0x5DAB6577)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I ..\CMSIS -I ..\FWlib\inc -I ..\USER -I .\Driver\inc-I.\RTE\_USART1-DEMO-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.1.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD-o ..\output\main.o --omf_browse ..\output\main.crf --depend ..\output\main.d)
 I (.\Driver\inc\global.h)(0x5DA2D5E0)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x588B8344)
 I (..\CMSIS\stm32f10x.h)(0x5D5905EC)
